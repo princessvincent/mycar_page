@@ -22,17 +22,15 @@ let html = "";
 
 cars.forEach(e => {
     html += `
-    <div class=" col-12 col-sm-12 col-md-4 col-lg-4 ">
-    <div class="card-img ">
-      <div class="d-md-fle" id="image">
-            <img src="images/${e.img}" alt="" class="card-img img-fluid w-auto">
-        </div>
-            <div class="bg-success p-md-5 p-sm-4 mb-4 w-75" m-md-auto>
-        <h2 class="text-center m-auto text-light fs-3 ">Name:  ${e.names}</h2>
-        <p class=" text-center m-auto text-light fs-3 ">price:  ${e.price}</p>
-            </div>
-    </div>
-</div>
+    <div class="col-12 col-sm-12 col-lg-6 col-md-6 m-md-auto">
+      <div class="">
+          <img src="images/${e.img}" alt="" class="card-img img-fluid m-md-auto w-auto">
+      </div>
+      <div class="bg-success p-md-5 p-sm-4 mb-4 w-auto m-md-auto ">
+          <h2 class="text-center m-auto text-light fs-3 w-auto ">Name: ${e.names}</h2>
+          <p class=" text-center m-auto text-light fs-3 w-auto ">price: ${e.price}</p>
+              </div>
+      </div>
     `
 
     console.log(e)
